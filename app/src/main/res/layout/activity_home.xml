@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context="in.juspay.godel.demo.recharge.HomeActivity" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="#1261d5"
+            android:gravity="center"
+            android:drawableTop="@drawable/jp_logo_with_bold_text"
+            android:drawablePadding="24dp"
+            android:text="WELCOME TO \nJUSPAY INTEG EXAMPLES"/>
+
+        <Button
+            android:id="@+id/embed_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:minWidth="128dp"
+            android:gravity="center"
+            android:text="Embedded Fragment"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="32dp"
+            android:onClick="embedFragmentButtonClicked"/>
+
+        <Button
+            android:id="@+id/FL_Extended"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:minWidth="128dp"
+            android:gravity="center"
+            android:text="FL + JBF Extended"
+            android:layout_margin="16dp"
+            android:onClick="extendedButtonClicked"/>
+
+        <Button
+            android:id="@+id/FL_Simple"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:minWidth="128dp"
+            android:gravity="center"
+            android:text="FL + JBF Direct"
+            android:layout_margin="16dp"
+            android:onClick="directButtonClicked"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:text="* FL - Frame Layout\n  JBF - JuspayBrowserFragment"/>
+
+</FrameLayout>
