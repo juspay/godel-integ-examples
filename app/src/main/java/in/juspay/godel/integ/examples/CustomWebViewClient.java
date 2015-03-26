@@ -19,11 +19,9 @@ public class CustomWebViewClient extends JuspayWebViewClient {
 
     @Override
     public void onPageFinished(WebView view, String url) {
+        super.onPageFinished(view, url);
         if(view.getTitle() != null && view.getTitle().equals("Juspay Payment Response")) {
             activity.handlePaymentResponse(url);
-        }
-        else {
-            super.onPageFinished(view, url);
         }
     }
 
